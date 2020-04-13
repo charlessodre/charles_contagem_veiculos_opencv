@@ -1,5 +1,4 @@
-# Detectando Movimentos com OpenCV 4.1.1
-# *** EM DESENVOLVIMENTO ***
+# Contagem de carros com OpenCV 4.1.1
 
 <p> Nesse estudo vamos utilizar a biblioteca <b> OpenCV (versão 4.1.1) </b> </p>
 

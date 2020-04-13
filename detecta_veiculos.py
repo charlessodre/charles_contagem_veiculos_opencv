@@ -1,6 +1,5 @@
 import cv2
 import time
-import numpy as np
 
 print(cv2.__version__)
 
