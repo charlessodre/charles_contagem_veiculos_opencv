@@ -9,7 +9,7 @@ video_entrada = "./videos/Cars - 133.mp4"
 cap = cv2.VideoCapture(video_entrada)
 _, frame = cap.read()
 
-# Define as configurações do vídeo de saida que vai conter os pontos detectados e movimentos detectados.
+# Define as configurações do vídeo de saída.
 output_frame = "./output/saida_video.mp4"
 save_frame = cv2.VideoWriter(output_frame, cv2.VideoWriter_fourcc(*'mp4v'), 10, (frame.shape[1], frame.shape[0]))
 
@@ -21,6 +21,7 @@ total_right_car = 0
 
 # Area mínima do contorno considerado.
 min_contour_Area = 20000
+# Distância mínima da linha target
 min_center_distance = 60
 gaussian_blur_value = 3
 threshold_binary_value = 5
@@ -73,7 +74,6 @@ while True:
     cv2.putText(frame1, "Pista Direita", (400, 300), cv2.FONT_HERSHEY_PLAIN, 1, (0, 255, 0), 1)
 
     for cnt in contours:
-
         # Obtêm a área do contorno.
         contour_area = cv2.contourArea(cnt)
 
@@ -124,7 +124,7 @@ while True:
     # cv2.imshow('frame_gray_blur - 2', frame1_gray_blur)
     # cv2.imshow('frame_gray_blur_binary - 3', frame1_gray_blur_binary)
     # cv2.imshow('frame_diff - 4', frame_diff)
-    cv2.imshow('frame_dilate - 5', frame_dilate)
+    # cv2.imshow('frame_dilate - 5', frame_dilate)
     cv2.imshow('original', frame1)
 
     # Salva uma cópia do frame

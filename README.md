@@ -13,12 +13,11 @@
 <p> O video utilizado foi retirado do site: </p>
 <p>https://pixabay.com/pt/videos/carros-estrada-tr%C3%A1fego-condu%C3%A7%C3%A3o-133/</p>
 
-
 ## Informação sobre os arquivos:
 <p> <b>detecta_veiculos.py </b> - Esse é o programa principal que realiza a contagem de carros no vídeo. </p>
 
 
-##### Exemplo de Movimento detectado:
+##### Resultado da contagem:
 
 ![exemplo_contagem_carros](exemplo_contagem_carros.gif)
 
