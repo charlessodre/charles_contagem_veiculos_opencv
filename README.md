@@ -20,5 +20,3 @@
 ##### Resultado da contagem:
 
 ![exemplo_contagem_carros](exemplo_contagem_carros.gif)
-
-![exemplo_contagem_carros_contornos](exemplo_contagem_carros_contornos.gif)
